@@ -1,0 +1,127 @@
+body {
+    font-size: 16px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .card {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 540px;
+    height: 400px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 0px 15px #b2b8c9;
+}
+body .card .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 8px;
+    padding-inline: 16px;
+    margin: 0;
+}
+body .card .info .name-model {
+    margin: 0;
+    padding-block: 4px;
+}
+body .card .info .name-model p,
+body .card .info .name-model h3 {
+    margin: 0;
+    padding-block: 4px;
+}
+body .card .info .price {
+    color: #286ba0;
+    font-size: 32px;
+    font-weight: bold;
+}
+body .card .images-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 8px;
+    min-height: 0;
+    min-width: 0;
+}
+body .card .images-grid .main-image {
+    background-color: gray;
+    grid-row: span 3;
+    grid-column: span 2;
+    overflow: hidden;
+}
+body .card .images-grid .side-image-1 {
+    background-color: gray;
+    grid-row: 1;
+    grid-column: 3;
+    overflow: hidden;
+}
+body .card .images-grid .side-image-1:hover {
+    cursor: pointer;
+}
+body .card .images-grid .side-image-2 {
+    background-color: gray;
+    grid-row: 2;
+    grid-column: 3;
+    overflow: hidden;
+}
+body .card .images-grid .side-image-2:hover {
+    cursor: pointer;
+}
+body .card .images-grid .side-image-3 {
+    background-color: gray;
+    grid-row: 3;
+    grid-column: 3;
+    overflow: hidden;
+}
+body .card .images-grid .side-image-3:hover {
+    cursor: pointer;
+}
+body .card .images-grid img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+body .card .location {
+    background-color: #40494a;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-block: 8px;
+    padding-inline: 16px;
+}
+body .card .location img {
+    aspect-ratio: 1/1;
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    padding: 0;
+    margin: 0;
+}
+body .card .location p {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+body .card .car-properties {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding-inline: 40px;
+    padding-block: 4px;
+}
+body .card .car-properties li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 4px;
+}
+body .card .car-properties li img {
+    aspect-ratio: 1/1;
+    width: 24px;
+    height: 24px;
+}

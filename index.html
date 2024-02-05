@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css" />
+        <title>Anaf Ibn Karim</title>
+    </head>
+    <body>
+        <div class="card">
+            <div class="info">
+                <div class="name-model">
+                    <h3>Range Rover Evoque</h3>
+                    <p>2L SE Tech eD4</p>
+                </div>
+                <div class="price">£17, 092</div>
+            </div>
+
+            <div class="images-grid">
+                <div class="main-image">
+                    <img id="mainImage" src="./images/image-1.jpg" alt="" />
+                </div>
+                <div class="side-image-1">
+                    <img
+                        onclick="swapImage(this)"
+                        id="image1"
+                        src="./images/image-2.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="side-image-2">
+                    <img
+                        onclick="swapImage(this)"
+                        id="image2"
+                        src="./images/image-3.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="side-image-3">
+                    <img
+                        onclick="swapImage(this)"
+                        id="image3"
+                        src="./images/image-4.jpg"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <div class="location">
+                <img src="./images/location.png" alt="" />
+                <p>In stock at Birmingham</p>
+            </div>
+            <ul class="car-properties">
+                <li>
+                    <img src="./images/fuel.png" alt="" />
+                    <p>Diesel</p>
+                </li>
+                <li>
+                    <img src="./images/calendar.png" alt="" />
+                    <p>2020</p>
+                </li>
+                <li>
+                    <img src="./images/speedometer.png" alt="" />
+                    <p>11,000</p>
+                </li>
+                <li>
+                    <img src="./images/car.png" alt="" />
+                    <p>5 door</p>
+                </li>
+            </ul>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
